@@ -12,7 +12,6 @@ android {
         targetSdkVersion 33
         versionCode 1
         versionName "1.0.0"
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
@@ -36,25 +35,25 @@ android {
 }
 
 dependencies {
-    // Android Core - Minimal compatible versions
+    // Core Android
     implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation 'com.google.android.material:material:1.7.0'
     implementation 'androidx.recyclerview:recyclerview:1.2.1'
     implementation 'androidx.fragment:fragment:1.5.4'
-
-    // Database - SQLite only (no Room to avoid Kotlin)
+    
+    // Database
     implementation 'androidx.sqlite:sqlite:2.3.0'
-
-    // Network
+    
+    // Networking
     implementation 'com.squareup.okhttp3:okhttp:4.9.3'
     implementation 'com.google.code.gson:gson:2.10'
-
+    
     // Lifecycle
     implementation 'androidx.lifecycle:lifecycle-runtime:2.5.1'
     implementation 'androidx.lifecycle:lifecycle-viewmodel:2.5.1'
     implementation 'androidx.lifecycle:lifecycle-livedata:2.5.1'
-
+    
     // Testing
     testImplementation 'junit:junit:4.13.2'
 }
