@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="@string/logout"
+            android:textColor="@color/surface_color"
+            android:background="@color/error_color"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/clearCacheButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Clear Downloaded Files"
+            android:textColor="@color/surface_color"
+            android:background="@drawable/button_secondary"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/aboutButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="@string/about"
+            android:textColor="@color/surface_color"
+            android:background="@drawable/button_primary"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About GES Study Notes"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Version 1.0.0\n\nGES Study Notes helps Basic 6-9 students prepare for BECE exams by providing access to study materials and past papers offline.\n\nFeatures:\n• 10 GES Subjects\n• Offline Access\n• Study Progress Tracking\n• Past Papers Library (BECE)\n• Quiz Mode\n• Download & Share"
+            android:textSize="12sp"
+            android:textColor="@color/text_secondary"
+            android:lineSpacingMultiplier="1.6" />
+
+    </LinearLayout>
+
+</ScrollView>
